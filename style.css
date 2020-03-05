@@ -1,7 +1,60 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .bg-red {
   background-color: #F72210 !important;
 }
 
-main {
-  border: solid 3px red;
+/* TYPOGRAPHY */
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: lightgray;
+}
+
+h3 a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.more-stories h3 a {
+  font-size: 1rem;
+}
+
+h3 a:hover {
+  color: #333;
+  text-decoration-color: #F72210;
+}
+
+h4 a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+}
+
+h4 a:hover {
+  color: #F72210;
+  text-decoration: none;
+}
+
+h5 a {
+  font-weight: 100;
+  font-size: 18px;
+  color: #444;
+}
+
+.culture-travel p {
+  color: #999;
+}
+
+.culture-travel h5 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 15px;
+  color: #333;
 }

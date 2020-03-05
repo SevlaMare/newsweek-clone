@@ -19,11 +19,12 @@ The main technology explored here is Bootstrap.
 
 <ul>
   <h3>Specific</h3>
-  <li>Build as much as possible with Bootstrap</li>
+  <li>Size and position elements with Bootstrap</li>
   <li>Page layout should work on small screens</li>
   <li>Use a code Linter</li>
   <li>Use Git and Github workflow</li>
-  <li>Don't merge in master branch until the project finished and approved</li>
+  <li>Do all commits in a single branch<li>
+  <li>Merge in master only after the project is complete and approved</li>
 </ul>
 
 ## Built With
