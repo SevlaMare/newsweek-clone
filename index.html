@@ -17,25 +17,21 @@
 </head>
 <body>
 
-<!-- IMAGE WIDTH IS OVERLLAPING, ALIGN IS CORRECT -->
-<main class="container">
-<section class="row">
-  <!-- FIRST COLUMN -->
-  <div class="col-sm-3">
+
+<main class="container-fluid">
+<section id="grid-1" class="row">
+  <!-- FIRST COLUMN (4x1) -->
+  <div id="featured-stories" class="col-sm-3">
     <h2>FEATURED STORIES</h2>
     <article>
       <a href="#"><img class="img-fluid" src="images/featuresStories/joe-biden.jpg" alt="img"></a>
-      
       <h3><a href="#">Joe Biden Projected as Winner of South Carolina Primary</a></h3>
       <p>Former Vice President had an overwhelming lead over his Democratic primary opponents during the South Carolina primary on Saturday, getting momentum before the upcoming Super Tuesday.</p>
       <hr>
-
       <h4><a href="#">Most Democrats Wrongly Believe Barack Obama Has Endorsed a 2020 Candidate</a></h4>
       <hr>
-
       <h4><a href="#">Joe Biden Banks on South Carolina, But What 'Win' Looks Like Open Question</a></h4>
       <hr>
-
       <h4><a href="#">Who Should You Vote For On Super Tuesday? This Quiz Will Tell You</a></h4>
       <hr>
     </article>
@@ -68,236 +64,262 @@
 
   <!-- SECOND COLUMN -->
   <div class="col-sm-6">
-    <h2>TOP STORY</h2>
-    <article>
-      <a href="#"><img src="images/italy-coronavirus.jpg" class="img-fluid" alt="image"></a>
-      <h3><a href="#">First U.S. Coronavirus Death Confirmed in Washington State</a></h3>
-      <p>Several Washington state health agencies confirmed Saturday afternoon that the country's first coronavirus death occurred and that multiple new cases of coronavirus have been detected in the region.</p>
-    </article>
-
-    <!-- NESTED ROW (1x3) -->
-    <h2>CULTURE & TRAVEL</h2>
-    <div class="row culture-travel">
-      <article class="col">
-        <img src="images/cultureTravel/oscars.jpg" class="img-fluid" alt="image">
-        <h5><a href="#">BTS and 'Parasite' Director Donate $164,000 to Coronavirus Relief Efforts</a></h5>
-        <p>The money donated by the artists (who were both born in Daegu, the epicenter of the outreak) will go towards purchasing face masks and hand sanitizers for those in need.</p>
-      </article>
-
-      <article class="col">
-        <img src="images/cultureTravel/cul-map-libraries-04.jpg" class="img-fluid" alt="image">
-        <h5><a href="#">9 of the Most Innovative Libraries Around the World</a></h5>
-        <p>From camels delivering books to remote areas in Kenya to book-carrying-robots in Sydney, these unique libraries keep the magic of reading alive.</p>
-      </article>
-
-      <article class="col">
-        <img src="images/cultureTravel/kermode-bear.jpg" class="img-fluid" alt="image">
-        <h5><a href="#">In Search of the Elusive Spirit Bear in the 'Amazon of the North'</a></h5>
-        <p>This is the most intact coastal temperate rainforest left on Earth and also home to the rare white Kermode Bear.</p>
+    <!-- TOP STORY (1x1) -->
+    <div id="top-story">
+      <h2>TOP STORY</h2>
+      <article>
+        <a href="#"><img src="images/italy-coronavirus.jpg" class="img-fluid" alt="image"></a>
+        <h3><a href="#">First U.S. Coronavirus Death Confirmed in Washington State</a></h3>
+        <p>Several Washington state health agencies confirmed Saturday afternoon that the country's first coronavirus death occurred and that multiple new cases of coronavirus have been detected in the region.</p>
       </article>
     </div>
+
+    <!-- CULTURE & TRAVEL (1x3) -->
+    <div id="culture-travel">
+      <h2>CULTURE & TRAVEL</h2>
+      <div class="row">
+        <article class="col">
+          <img src="images/cultureTravel/oscars.jpg" class="img-fluid" alt="image">
+          <h5><a href="#">BTS and 'Parasite' Director Donate $164,000 to Coronavirus Relief Efforts</a></h5>
+          <p>The money donated by the artists (who were both born in Daegu, the epicenter of the outreak) will go towards purchasing face masks and hand sanitizers for those in need.</p>
+        </article>
   
-    <!-- ROW 11x -->
-    <h2>MORE STORIES</h2>
-    <hr>
-    <div class="more-stories">
-      <article>
-        <a href="#"><img src="images/moreStories/google-doodle.png" class="float-left mr-3" alt="img"></a>
-        <h3><a href="#">Leap Day 2020: Google Doodle Marks the Quadrennial Event of February 29</a></h3>
-        <p class="ml-95">There are around 200,000 Americans, and five million people worldwide, who are "leapers", those born on February 29.</p>  
-        <hr>
-      </article>
+        <article class="col">
+          <img src="images/cultureTravel/cul-map-libraries-04.jpg" class="img-fluid" alt="image">
+          <h5><a href="#">9 of the Most Innovative Libraries Around the World</a></h5>
+          <p>From camels delivering books to remote areas in Kenya to book-carrying-robots in Sydney, these unique libraries keep the magic of reading alive.</p>
+        </article>
   
-      <article>
-        <a href="#"><img src="images/moreStories/super-tuesday-primary-bernie-sanders.jpg" class="float-left mr-3" alt="img"></a>
-        <h3><a href="#">Sanders' Super Tuesday Performance Could Turn Race Into Dramatic Spectacle</a></h3>
-        <p>A sector of moderates in Congress, particularly vulnerable Democrats in swing districts, are beginning to discuss strategies to stop Senator Bernie Sanders from appearing at the top of the ticket.</p>
-        <hr>
-      </article>
+        <article class="col">
+          <img src="images/cultureTravel/kermode-bear.jpg" class="img-fluid" alt="image">
+          <h5><a href="#">In Search of the Elusive Spirit Bear in the 'Amazon of the North'</a></h5>
+          <p>This is the most intact coastal temperate rainforest left on Earth and also home to the rare white Kermode Bear.</p>
+        </article>
+      </div>
+    </div>
 
-      <article>
-        <a href="#"><img src="images/moreStories/democrats.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">Lichtman Predicts DNC Will Have Brokered Convention Unless Sanders Wins</a></h3>
-        <p>"To knock [Sanders] out -- that would be a big surprise, but I think you could make it close enough to go into multiple rounds of voting, particularly if some of the lesser contenders win some primaries," Allan Lichtman told Newsweek.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/south-carolina-prepares-2020-democratic-primary.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">What Previous South Carolina Primary Winners Mean for 2020</a></h3>
-        <p>"If you look at recent history, the winner of South Carolina has been able to use that as momentum to go on and win the nomination," a political scientist told Newsweek.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/us-russia-turkey-syria-idlib-airstrikes.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">U.S. Should Threaten Russia to Secure Idlib Cease-Fire, Former Envoy Says</a></h3>
-        <p>The conflict in northwestern Syria is in danger of spilling over after a Syrian airstrike killed 33 Turkish soldiers on Thursday.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/us-russia-turkey-syria-idlib-airstrikes.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">'8,400 Plus' Monitored for Coronavirus, Says California Governor</a></h3>
-        <p>Governor Gavin Newsom said Thursday that "8,400 plus" from both repatriation flights and "more traditional commercial flights which came in from points of concern and potential points of contact, particularly in Asia" are being monitored for coronavirus.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/hillary-clinton.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">Hillary Clinton Will Start Podcast Inspired by Comedian Conan O'Brien: Report</a></h3>
-        <p>Clinton reportedly plans to use her show to have in-depth talks with newsmakers.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/ok-boomer.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">Boomers? OK, Says Poll Showing Americans Don't Blame Them for All Problems</a></h3>
-        <p>The survey by Ipsos found that a plurality of boomers felt their generation had a positive impact on modern American society.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/syria-war-idlib-saraqib-turkey-russia.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">Russia and Turkey's Conflict in Syria Escalates Amid New Troop Deaths</a></h3>
-        <p>Turkish Hatay province Governor Rahmi Dogan said that at least 33 Turkish troops were killed in airstrikes blamed on the Syrian government against their positions in the country's northwestern province of Idlib.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/michael-bloomberg.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">Bloomberg Says President Doesn't Need to Be 'College Debater-in-Chief'</a></h3>
-        <p>"I believe we need a leader who's ready to be commander-in-chief, not the college debater-in-chief," said former New York City Mayor Michael Bloomberg during a campaign rally speech on Thursday in Houston, Texas.</p>
-        <hr>
-      </article>
-
-      <article>
-        <a href="#"><img src="images/moreStories/coronavirus-china.jpg" class="float-left mr-3 mb-3" alt="img"></a>
-        <h3><a href="#">Video Shows What Happens if You Evade Coronavirus Checkpoint in China</a></h3>
-        <p>The video shows a training exercise of officers stopping a person, detaining them and spraying disinfectant on the scene.</p>
-        <hr>
-      </article>
+    <!-- MORE STORIES (11x1) -->
+    <div id="more-stories">
+      <h2>MORE STORIES</h2>
+      <hr>
+      <div class="more-stories">
+        <article>
+          <a href="#"><img src="images/moreStories/google-doodle.png" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Leap Day 2020: Google Doodle Marks the Quadrennial Event of February 29</a></h3>
+          <p class="ml-95">There are around 200,000 Americans, and five million people worldwide, who are "leapers", those born on February 29.</p>  
+          <hr>
+        </article>
+    
+        <article>
+          <a href="#"><img src="images/moreStories/super-tuesday-primary-bernie-sanders.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Sanders' Super Tuesday Performance Could Turn Race Into Dramatic Spectacle</a></h3>
+          <p>A sector of moderates in Congress, particularly vulnerable Democrats in swing districts, are beginning to discuss strategies to stop Senator Bernie Sanders from appearing at the top of the ticket.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/democrats.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Lichtman Predicts DNC Will Have Brokered Convention Unless Sanders Wins</a></h3>
+          <p>"To knock [Sanders] out -- that would be a big surprise, but I think you could make it close enough to go into multiple rounds of voting, particularly if some of the lesser contenders win some primaries," Allan Lichtman told Newsweek.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/south-carolina-prepares-2020-democratic-primary.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">What Previous South Carolina Primary Winners Mean for 2020</a></h3>
+          <p>"If you look at recent history, the winner of South Carolina has been able to use that as momentum to go on and win the nomination," a political scientist told Newsweek.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/us-russia-turkey-syria-idlib-airstrikes.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">U.S. Should Threaten Russia to Secure Idlib Cease-Fire, Former Envoy Says</a></h3>
+          <p>The conflict in northwestern Syria is in danger of spilling over after a Syrian airstrike killed 33 Turkish soldiers on Thursday.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/gavin-newsom.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">'8,400 Plus' Monitored for Coronavirus, Says California Governor</a></h3>
+          <p>Governor Gavin Newsom said Thursday that "8,400 plus" from both repatriation flights and "more traditional commercial flights which came in from points of concern and potential points of contact, particularly in Asia" are being monitored for coronavirus.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/hillary-clinton.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Hillary Clinton Will Start Podcast Inspired by Comedian Conan O'Brien: Report</a></h3>
+          <p>"We do trust her to make the right decisions on how to proceed," said National Organization for Women President Toni Van Pelt.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/ok-boomer.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Boomers? OK, Says Poll Showing Americans Don't Blame Them for All Problems</a></h3>
+          <p>The survey by Ipsos found that a plurality of boomers felt their generation had a positive impact on modern American society.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/syria-war-idlib-saraqib-turkey-russia.jpg" class="float-left mr-3 mb-3" alt="img"></a>
+          <h3><a href="#">Russia and Turkey's Conflict in Syria Escalates Amid New Troop Deaths</a></h3>
+          <p>Turkish Hatay province Governor Rahmi Dogan said that at least 33 Turkish troops were killed in airstrikes blamed on the Syrian government against their positions in the country's northwestern province of Idlib.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/michael-bloomberg.jpg" class="float-left mr-3 mb-3" alt="img"></a>
+          <h3><a href="#">Bloomberg Says President Doesn't Need to Be 'College Debater-in-Chief'</a></h3>
+          <p>"I believe we need a leader who's ready to be commander-in-chief, not the college debater-in-chief," said former New York City Mayor Michael Bloomberg during a campaign rally speech on Thursday in Houston, Texas.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/coronavirus-china.jpg" class="float-left mr-3 mb-3" alt="img"></a>
+          <h3><a href="#">Video Shows What Happens if You Evade Coronavirus Checkpoint in China</a></h3>
+          <p>The video shows a training exercise of officers stopping a person, detaining them and spraying disinfectant on the scene.</p>
+          <hr>
+        </article>
+      </div>
     </div>
   </div>
 
   <!-- THIRD COLUMN -->
   <div class="col-sm-3">
-    <h2>OPINION</h2>
-    <div>
+    <!-- OPINION (6x1) -->
+    <div id="opinion">
+      <h2>OPINION</h2>
       <article>
-        <a href="#"><img src="images/opinion/daniel-r-depetris.png" alt="picture"></a>
-        <h4><a href="#">No Compelling National Security Argument to Keep U.S. Troops in Afghanistan</a></h4>
-        <p>BY DANIEL R. DEPETRIS</p>
+        <a href="#"><img src="images/opinion/daniel-r-depetris.png" class="float-left mr-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">No Compelling National Security Argument to Keep U.S. Troops in Afghanistan</a></h4>
+          <p>BY DANIEL R. DEPETRIS</p>
+        </div>
       </article>
 
       <hr>
-
+    
       <article>
-        <a href="#"><img src="images/opinion/ariel-cohen.png" alt="picture"></a>
-        <h4><a href="#">Can the American-European Alliance Survive?</a></h4>
-        <p>BY ARIEL COHEN</p>
-      </article>
-
-      <hr>
-      
-      <article>
-        <a href="#"><img src="images/opinion/andrew-mcbride.png" alt="picture"></a>
-        <h4><a href="#">The Roger Stone Sentence Was Appropriate. The Guidelines Need to Change</a></h4>
-        <p>BY ANDREW MCBRIDE</p>
-      </article>
-
-      <hr>
-
-      <article>
-        <a href="#"><img src="images/opinion/ann-olivarius.png" alt="picture"></a>
-        <h4><a href="#">Weinstein's Verdict Is Less Than We Deserved—Yet More Than We Dared Hope For</a></h4>
-        <p>BY ANN OLIVARIUS</p>
+        <a href="#"><img src="images/opinion/ariel-cohen.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">Can the American-European Alliance Survive?</a></h4>
+          <p>BY ARIEL COHEN</p>
+        </div>
       </article>
 
       <hr>
       
       <article>
-        <a href="#"><img src="images/opinion/david-miliband.png" alt="picture"></a>
-        <h4><a href="#">Idlib Is the New Face of Conflict. The World Needs to Catch Up</a></h4>
-        <p>BY DAVID MILIBAND</p>
+        <a href="#"><img src="images/opinion/andrew-mcbride.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">The Roger Stone Sentence Was Appropriate. The Guidelines Need to Change</a></h4>
+          <p>BY ANDREW MCBRIDE</p>
+        </div>
       </article>
 
       <hr>
 
       <article>
-        <a href="#"><img src="images/opinion/newt-gingrich.png" alt="picture"></a>
-        <h4><a href="#">The Stature Gap Between Trump and the Bickering Democrats Is Growing</a></h4>
-        <p>BY NEWT GINGRICH</p>
+        <a href="#"><img src="images/opinion/ann-olivarius.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">Weinstein's Verdict Is Less Than We Deserved—Yet More Than We Dared Hope For</a></h4>
+          <p>BY ANN OLIVARIUS</p>
+        </div>
+      </article>
+
+      <hr>
+      
+      <article>
+        <a href="#"><img src="images/opinion/david-miliband.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">Idlib Is the New Face of Conflict. The World Needs to Catch Up</a></h4>
+          <p>BY DAVID MILIBAND</p>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <a href="#"><img src="images/opinion/newt-gingrich.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">The Stature Gap Between Trump and the Bickering Democrats Is Growing</a></h4>
+          <p>BY NEWT GINGRICH</p>
+        </div>
       </article>
     </div>
 
-    <h2>THE DEBATE</h2>
-    <div>
-      <a href="#"><img src="images/opinion/doctors-medicare-all.jpg" alt="image"></a>
-      <p><a href="#">Doctors Who Support Medicare for All Should Be Careful What They Wish For</a></p>
-      <hr>
-      <a href="#"><img src="images/opinion/sally-pipes.png" alt="image"></a>
-      <p>BY SALLY C. PIPES</p>
-    </div>
-    <p>VS</p>
-    <div>
-      <a href="#"><img src="images/opinion/bernie-sanders-america.jpg" alt="image"></a>
-      <p><a href="#">Bernie's Plans Are Ambitious. But They Cost Peanuts Compared to Inaction</a></p>
-      <hr>
-      <a href="#"><img src="images/opinion/robert-reich.png" alt="image"></a>
-      <p>BY ROBERT REICH</p>
+    <!-- THE DEBATE (2x1) -->
+    <div id="the-debate">
+      <h2>THE DEBATE</h2>
+      <div id="deb-author1">
+        <a href="#"><img src="images/opinion/doctors-medicare-all.jpg" class="float-left mr-2" alt="image"></a>
+        <p><a href="#">Doctors Who Support Medicare for All Should Be Careful What They Wish For</a></p>
+        <hr>
+        <a href="#"><img src="images/opinion/sally-pipes.png" class="float-right img-65" alt="image"></a>
+        <p>BY <strong>SALLY C. PIPES</strong></p>
+      </div>
+      <p id="vs" class="text-center clear">VS</p>
+      <div id="deb-author2">
+        <a href="#"><img src="images/opinion/bernie-sanders-america.jpg" class="float-left mr-2" alt="image"></a>
+        <p><a href="#">Bernie's Plans Are Ambitious. But They Cost Peanuts Compared to Inaction</a></p>
+        <hr>
+        <a href="#"><img src="images/opinion/robert-reich.png" class="float-right img-65" alt="image"></a>
+        <p>BY <strong>ROBERT REICH</strong></p>
+      </div>
     </div>
 
     <!-- LAST NEWS (7x1) -->
-    <article>
-      <img src="images/opinion/powerball-mega-millions-tickets.jpg" alt="image">
-      <h4><a href="#">Powerball Drawing For 02/29/20: Saturday Jackpot is $80 Million</a></h4>
-    </article>
-
-    <hr>
-
-    <article>
-      <img src="images/opinion/trump-cpac-democrats-socialism.jpg" alt="image">
-      <h4><a href="#">At CPAC, Trump Says 'Far-Left Radicals' Want America to Embrace Socialism</a></h4>
-    </article>
-
-    <hr>
-
-    <article>
-      <img src="images/opinion/trump-pence.jpg" alt="image">
-      <h4><a href="#">U.S. Adopts Iran Travel Restriction, Increases Advisory For 2 Countries</a></h4>
-    </article>
-
-    <hr>
-
-    <article>
-      <img src="images/opinion/michael-smerconish-cnn-bernie-sanders.jpg" alt="image">
-      <h4><a href="#">CNN Blasted for Segment Comparing Bernie Sanders' Rise to Coronavirus</a></h4>
-    </article>
-
-    <hr>
-
-    <article>
-      <img src="images/opinion/trump.jpg" alt="image">
-      <h4><a href="#">Donald Trump Criticizes Mitt Romney For His Impeachment Trial Vote</a></h4>
-    </article>
-
-    <hr>
-
-    <article>
-      <img src="images/opinion/mikey-garcia.jpg" alt="image">
-      <h4><a href="#">Garcia vs. Vargas: All You Need to Know Ahead of WBC Welterweight Fight</a></h4>
-    </article>
-
-    <hr>
-
-    <article>
-      <img src="images/opinion/barack-obama.jpg" alt="image">
-      <h4><a href="#">Most Democrats Wrongly Believe Barack Obama Has Endorsed a 2020 Candidate</a></h4>
-    </article>
+    <div id="last-news">
+      <h2 class="clear">LAST NEWS</h2>
+      <article>
+        <img src="images/opinion/powerball-mega-millions-tickets.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Powerball Drawing For 02/29/20: Saturday Jackpot is $80 Million</a></h4>
+      </article>
+  
+      <hr>
+  
+      <article>
+        <img src="images/opinion/trump-cpac-democrats-socialism.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">At CPAC, Trump Says 'Far-Left Radicals' Want America to Embrace Socialism</a></h4>
+      </article>
+  
+      <hr>
+  
+      <article>
+        <img src="images/opinion/trump-pence.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">U.S. Adopts Iran Travel Restriction, Increases Advisory For 2 Countries</a></h4>
+      </article>
+  
+      <hr>
+  
+      <article>
+        <img src="images/opinion/michael-smerconish-cnn-bernie-sanders.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">CNN Blasted for Segment Comparing Bernie Sanders' Rise to Coronavirus</a></h4>
+      </article>
+  
+      <hr>
+  
+      <article>
+        <img src="images/opinion/trump.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Donald Trump Criticizes Mitt Romney For His Impeachment Trial Vote</a></h4>
+      </article>
+  
+      <hr>
+  
+      <article>
+        <img src="images/opinion/mikey-garcia.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Garcia vs. Vargas: All You Need to Know Ahead of WBC Welterweight Fight</a></h4>
+      </article>
+  
+      <hr>
+  
+      <article>
+        <img src="images/opinion/barack-obama.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Most Democrats Wrongly Believe Barack Obama Has Endorsed a 2020 Candidate</a></h4>
+      </article>
+    </div>
 
     <!-- SIGN UP NEWSLETTER -->
-    <div>
+    <div id="newsletter">
       <p>SIGN UP FOR OUR <br> NEWSLETTER</p>
       <a href="#">SIGN UP</a>
       <a href="#">Update your preferences >></a>

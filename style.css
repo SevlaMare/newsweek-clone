@@ -3,7 +3,15 @@
 }
 
 .bg-red {
-  background-color: #F72210 !important;
+  background-color: #f72210 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+main {
+  max-width: 1280px;
 }
 
 /* TYPOGRAPHY */
@@ -19,13 +27,13 @@ h3 a {
   color: #333;
 }
 
-.more-stories h3 a {
+#more-stories h3 a {
   font-size: 1rem;
 }
 
 h3 a:hover {
   color: #333;
-  text-decoration-color: #F72210;
+  text-decoration-color: #f72210;
 }
 
 h4 a {
@@ -35,7 +43,7 @@ h4 a {
 }
 
 h4 a:hover {
-  color: #F72210;
+  color: #f72210;
   text-decoration: none;
 }
 
@@ -45,16 +53,41 @@ h5 a {
   color: #444;
 }
 
-.culture-travel p {
+p {
+  font-size: 15px;
+  color: #333;
+}
+
+#culture-travel p {
   color: #999;
 }
 
-.culture-travel h5 a {
+#culture-travel h5 a {
   text-decoration: none;
   color: inherit;
 }
 
-p {
-  font-size: 15px;
+#the-debate p a {
+  font-weight: 600;
+  text-decoration: none;
   color: #333;
+}
+
+/* MISCELLANEOUS */
+.img-65 {
+  width: 65px;
+}
+
+#deb-author1 {
+  border-top: solid 4px #f72210;
+}
+
+#deb-author2 {
+  border-top: solid 4px #1c87fb;
+}
+
+#opinion h4 a {
+  color: #333;
+  font-size: 1rem;
+  line-height: 0.5rem;
 }
