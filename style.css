@@ -130,6 +130,10 @@ nav a:hover {
   text-decoration: none;
 }
 
+nav p {
+  color: #fff;
+}
+
 /* MISCELLANEOUS */
 .img-65 {
   width: 65px;
