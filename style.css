@@ -14,6 +14,10 @@ main {
   max-width: 1280px;
 }
 
+mb-60 {
+  margin-top: 20px;
+}
+
 /* TYPOGRAPHY */
 h2 {
   font-size: 16px;
@@ -77,6 +81,11 @@ p {
   color: #333;
 }
 
+/* NAVBAR */
+#icon-cloud {
+  width: 30px;
+}
+
 /* MISCELLANEOUS */
 .img-65 {
   width: 65px;
@@ -94,4 +103,8 @@ p {
   color: #333;
   font-size: 1rem;
   line-height: 0.5rem;
+}
+
+#logo-footer {
+  width: 300px;
 }
