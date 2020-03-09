@@ -86,6 +86,50 @@ p {
   width: 30px;
 }
 
+#icon-search {
+  width: 20px;
+}
+
+#icon-logo-nav {
+  width: 400px;
+}
+
+.btn-white {
+  font-weight: 700;
+  background: #fff;
+  color: #f72210;
+}
+
+.white-link {
+  color: #fff;
+  font-weight: 700;
+}
+
+#nav-links a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+}
+
+#nav-links a {
+  padding: 3px 20px;
+  border-right: solid 1px lightgray;
+}
+
+#nav-links a:last-child {
+  border-right: none;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#nav-links a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
 /* MISCELLANEOUS */
 .img-65 {
   width: 65px;
