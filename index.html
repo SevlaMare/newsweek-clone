@@ -20,14 +20,14 @@
 </head>
 <body>
 
-<!-- NAVBARS -->
+<!-- NAVBAR -->
 <nav class="d-flex justify-content-between align-items-end px-2 py-2 pb-3 bg-red">
-  <div class="pl-3">
+  <div class="pl-3 pt-2">
     <a class="white-link" href="#">
       <img src="images/icons/cloud.png" alt="icon" id="icon-cloud">
       19° São Paulo, BR >
     </a>
-    <p>Sun, Mar 01, 2020</p>
+    <p class="pt-2">Sun, Mar 01, 2020</p>
   </div>
 
   <a class="navbar-brand" href="#"><img src="images/icons/logo.png" alt="logo" id="icon-logo-nav"></a>
@@ -36,12 +36,13 @@
   <div>
     <span>
       <a href="#" class="white-link mr-2">SIGN IN</a>
-      <a href="#" class="px-3 py-1 btn-white">SUBSCRIBE ></a>
+      <a href="#" class="px-3 py-1 btn-white" id="btn-sub">SUBSCRIBE ></a>
     </span>
   </div>
 </nav>
 
-<nav class="d-flex justify-content-between p-3">
+<!-- NAVBAR LINKS -->
+<nav class="d-flex justify-content-between pt-3">
   <div id="nav-links">
     <a href="#">U.S.</a>
     <a href="#">World</a>
@@ -56,7 +57,7 @@
     <a href="#">Weather</a>
   </div>
 
-  <div>
+  <div class="pr-2">
     <span>Search</span>
     <img src="images/icons/search.svg" alt="icon" class="ml-2" id="icon-search">
   </div>
@@ -302,7 +303,7 @@
         <div id="deb-author1">
           <a href="#"><img src="images/opinion/doctors-medicare-all.jpg" class="float-left mr-2" alt="image"></a>
           <p><a href="#">Doctors Who Support Medicare for All Should Be Careful What They Wish For</a></p>
-          <hr>
+          <hr class="clear-left">
           <a href="#"><img src="images/opinion/sally-pipes.png" class="float-right img-65" alt="image"></a>
           <p>BY <strong>SALLY C. PIPES</strong></p>
         </div>
@@ -310,7 +311,7 @@
         <div id="deb-author2">
           <a href="#"><img src="images/opinion/bernie-sanders-america.jpg" class="float-left mr-2" alt="image"></a>
           <p><a href="#">Bernie's Plans Are Ambitious. But They Cost Peanuts Compared to Inaction</a></p>
-          <hr>
+          <hr class="clear-left">
           <a href="#"><img src="images/opinion/robert-reich.png" class="float-right img-65" alt="image"></a>
           <p>BY <strong>ROBERT REICH</strong></p>
         </div>
@@ -325,42 +326,42 @@
         <h4><a href="#">Powerball Drawing For 02/29/20: Saturday Jackpot is $80 Million</a></h4>
       </article>
   
-      <hr>
+      <hr class="clear">
   
       <article>
         <img src="images/opinion/trump-cpac-democrats-socialism.jpg" class="float-left mr-3" alt="image">
         <h4><a href="#">At CPAC, Trump Says 'Far-Left Radicals' Want America to Embrace Socialism</a></h4>
       </article>
   
-      <hr>
+      <hr class="clear">
   
       <article>
         <img src="images/opinion/trump-pence.jpg" class="float-left mr-3" alt="image">
         <h4><a href="#">U.S. Adopts Iran Travel Restriction, Increases Advisory For 2 Countries</a></h4>
       </article>
   
-      <hr>
+      <hr class="clear">
   
       <article>
         <img src="images/opinion/michael-smerconish-cnn-bernie-sanders.jpg" class="float-left mr-3" alt="image">
         <h4><a href="#">CNN Blasted for Segment Comparing Bernie Sanders' Rise to Coronavirus</a></h4>
       </article>
   
-      <hr>
+      <hr class="clear">
   
       <article>
         <img src="images/opinion/trump.jpg" class="float-left mr-3" alt="image">
         <h4><a href="#">Donald Trump Criticizes Mitt Romney For His Impeachment Trial Vote</a></h4>
       </article>
   
-      <hr>
+      <hr class="clear">
   
       <article>
         <img src="images/opinion/mikey-garcia.jpg" class="float-left mr-3" alt="image">
         <h4><a href="#">Garcia vs. Vargas: All You Need to Know Ahead of WBC Welterweight Fight</a></h4>
       </article>
   
-      <hr>
+      <hr class="clear">
   
       <article>
         <img src="images/opinion/barack-obama.jpg" class="float-left mr-3" alt="image">
@@ -379,9 +380,9 @@
 
 <!-- IN THE MAGAZINE (2x8) -->
 <section>
-  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo">IN THEMAGAZINE</h2>
+  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo" class="icon-section">IN THE MAGAZINE</h2>
 
-  <div class="row">
+  <div class="row" id="magazine">
     <figure class="col-3">
       <img src="images/inTheMagazine/march-06-2020-cover.jpg" alt="image">
       <figcaption><a href="#">SEE ALL FEATURES ></a></figcaption>
@@ -432,9 +433,9 @@
 
 <!-- EDITOR'S PICK -->
 <section>
-  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo">EDITOR'S PICK</h2>
+  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo" class="icon-section">EDITOR'S PICK</h2>
 
-  <div class="row">
+  <div class="row" id="editor-pick">
     <figure class="col-3">
       <img src="images/editorsPick/stock-image-seismogram.jpg" alt="image">
       <figcaption><a href="#">TECH & SCIENCE</a></figcaption>
@@ -495,9 +496,9 @@
 
 <!-- FEATURED SLIDESHOWS -->
 <section>
-  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo">FEATURED SLIDESHOWS</h2>
+  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo" class="icon-section">FEATURED SLIDESHOWS</h2>
 
-  <div class="row">
+  <div class="row" id="slides-show">
     <figure class="col-4">
       <a href="#"><img src="images/slides/tozeur-tunisia.webp" alt="image"></a>
       <figcaption>

@@ -10,6 +10,10 @@
   clear: both;
 }
 
+.clear-left {
+  clear: left;
+}
+
 main {
   max-width: 1280px;
 }
@@ -18,7 +22,7 @@ mb-60 {
   margin-top: 20px;
 }
 
-/* TYPOGRAPHY */
+/* --- TYPOGRAPHY --- */
 h2 {
   font-size: 16px;
   font-weight: 700;
@@ -81,7 +85,7 @@ p {
   color: #333;
 }
 
-/* NAVBAR */
+/* --- NAVBAR --- */
 #icon-cloud {
   width: 30px;
 }
@@ -92,6 +96,10 @@ p {
 
 #icon-logo-nav {
   width: 400px;
+}
+
+.icon-section {
+  margin-right: 15px;
 }
 
 .btn-white {
@@ -134,7 +142,11 @@ nav p {
   color: #fff;
 }
 
-/* MISCELLANEOUS */
+#btn-sub:hover {
+  color: #f72210;
+}
+
+/* --- MISCELLANEOUS --- */
 .img-65 {
   width: 65px;
 }
@@ -153,6 +165,20 @@ nav p {
   line-height: 0.5rem;
 }
 
+/* --- FOOTER --- */
 #logo-footer {
   width: 300px;
+}
+
+/* SECTIONS */
+#magazine img {
+  width: 100%;
+}
+
+#editor-pick img {
+  width: 100%;
+}
+
+#slides-show img {
+  width: 100%;
 }
