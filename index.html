@@ -20,49 +20,68 @@
 </head>
 <body>
 
-<!-- NAVBAR -->
-<nav class="d-flex justify-content-between align-items-end px-2 py-2 pb-3 bg-red">
-  <div class="pl-3 pt-2">
-    <a class="white-link" href="#">
-      <img src="images/icons/cloud.png" alt="icon" id="icon-cloud">
-      19° São Paulo, BR >
-    </a>
-    <p class="pt-2">Sun, Mar 01, 2020</p>
-  </div>
+<!-- LAPTOP NAVBAR -->
+<div class="d-none d-lg-block">
+  <nav class="d-flex justify-content-between align-items-end px-2 py-2 pb-3 bg-red">
+    <div class="pl-3 pt-2">
+      <a class="white-link" href="#">
+        <img src="images/icons/cloud.png" alt="icon" id="icon-cloud">
+        19° São Paulo, BR >
+      </a>
+      <p class="pt-2">Sun, Mar 01, 2020</p>
+    </div>
 
-  <a class="navbar-brand" href="#"><img src="images/icons/logo.png" alt="logo" id="icon-logo-nav"></a>
+    <a class="navbar-brand" href="#"><img src="images/icons/logo.png" alt="logo" id="icon-logo-nav"></a>
 
-  <!-- BUTTONS -->
-  <div>
+    <!-- BUTTONS -->
+    <div>
+      <span>
+        <a href="#" class="white-link mr-2">SIGN IN</a>
+        <a href="#" class="px-3 py-1 btn-white" id="btn-sub">SUBSCRIBE ></a>
+      </span>
+    </div>
+  </nav>
+</div>
+
+<!-- LINKS -->
+<div class="d-none d-lg-block">
+  <nav class="d-flex justify-content-between pt-3">
+    <div id="nav-links">
+      <a href="#">U.S.</a>
+      <a href="#">World</a>
+      <a href="#">Business</a>
+      <a href="#">Tech & Science</a>
+      <a href="#">Culture</a>
+      <a href="#">Newsgeek</a>
+      <a href="#">Sports</a>
+      <a href="#">Health</a>
+      <a href="#">The Debate</a>
+      <a href="#">Vantage</a>
+      <a href="#">Weather</a>
+    </div>
+  
+    <div class="pr-2">
+      <span>Search</span>
+      <img src="images/icons/search.svg" alt="icon" class="ml-2" id="icon-search">
+    </div>
+  </nav>
+
+  <hr>
+</div>
+
+<!-- MOBILE NAVBAR -->
+<!-- <div class="d-sm-none sticky-top"> -->
+<div class="sticky-top">
+  <nav class="d-flex justify-content-between align-items-center bg-red p-3" id="nav-mobile">
+    <img src="images/icons/logo.png" alt="img" id="nav-logo-mob">
+
     <span>
       <a href="#" class="white-link mr-2">SIGN IN</a>
-      <a href="#" class="px-3 py-1 btn-white" id="btn-sub">SUBSCRIBE ></a>
+      <a href="#" class="px-1 py-1 btn-white">SUBSCRIBE</a>
+      <img src="images/icons/menu.svg" alt="img" class="mx-2" id="icon-menu">
     </span>
-  </div>
-</nav>
-
-<!-- NAVBAR LINKS -->
-<nav class="d-flex justify-content-between pt-3">
-  <div id="nav-links">
-    <a href="#">U.S.</a>
-    <a href="#">World</a>
-    <a href="#">Business</a>
-    <a href="#">Tech & Science</a>
-    <a href="#">Culture</a>
-    <a href="#">Newsgeek</a>
-    <a href="#">Sports</a>
-    <a href="#">Health</a>
-    <a href="#">The Debate</a>
-    <a href="#">Vantage</a>
-    <a href="#">Weather</a>
-  </div>
-
-  <div class="pr-2">
-    <span>Search</span>
-    <img src="images/icons/search.svg" alt="icon" class="ml-2" id="icon-search">
-  </div>
-</nav>
-<hr>
+  </nav>
+</div>
 
 
 <!-- CONTENT -->
@@ -367,7 +386,7 @@
     </div>
 
     <!-- SIGN UP NEWSLETTER -->
-    <div id="newsletter" class="m-4 p-4">
+    <div id="newsletter" class="m-4 p-4 clear mx-auto">
       <img src="images/logo-icon.png" class="float-left mr-2" alt="img">
       <p>SIGN UP FOR OUR <br> NEWSLETTER</p>
       <a href="#" class="p-2" id="btn-signup-1">SIGN UP ></a><br>
@@ -387,46 +406,46 @@
       <figcaption><a href="#">SEE ALL FEATURES ></a></figcaption>
     </figure>
   
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/fea-toxicstress-banner.webp" alt="image">
-      <figcaption><span>COVER</span><a href="#">HEALTH</a></figcaption>
+      <span>COVER</span><a href="#">HEALTH</a>
       <h3><a href="#">Yes, Stress Really Is Making You Sick</a></h3>
-    </figure>
+    </div>
   
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/per-financial-infidelity.jpg" alt="image">
-      <figcaption><span>PERISCOPE</span><a href="#">BUSINESS</a></figcaption>
+      <span>PERISCOPE</span><a href="#">BUSINESS</a>
       <h3><a href="#">Keeping Money Secrets From Your Partner May Not Be Such a Bad Thing</a></h3>
-    </figure>
+    </div>
   
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/william-barr.jpg" alt="image">
-      <figcaption><span>PERISCOPE</span><a href="#">POLITICS</a></figcaption>
+      <span>PERISCOPE</span><a href="#">POLITICS</a>
       <h3><a href="#">Legal Historian: AG Barr's Actions Are 'Remarkably Not Normal'</a></h3>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/cul-kiss-banner.webp" alt="image">
-      <figcaption><span>DOWNTIME</span><a href="#">CULTURE</a></figcaption>
+      <span>DOWNTIME</span><a href="#">CULTURE</a>
       <h3><a href="#">It Costs $4,000 to go Backstage with KISS</a></h3>
-    </figure>
+    </div>
   
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/cul-map-libraries-04.jpg" alt="image">
-      <figcaption><span>DOWNTIME</span><a href="#">CULTURE</a></figcaption>
+      <span>DOWNTIME</span><a href="#">CULTURE</a>
       <h3><a href="#">9 of the Most Innovative Libraries Around the World</a></h3>
-    </figure>
+    </div>
   
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/cul-ps-janefonda-banner.jpg" alt="image">
-      <figcaption><span>DOWNTIME</span><a href="#">CULTURE</a></figcaption>
+      <span>DOWNTIME</span><a href="#">CULTURE</a>
       <h3><a href="#">Jane Fonda Brings Her Climate Change Protest 'Fire Drill Fridays' to L.A.</a></h3>
-    </figure>
+    </div>
   
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/inTheMagazine/car.png" alt="image">
       <h3><a href="#">LAPPING THE FIELD</a></h3>
-    </figure>
+    </div>
   </div>
 </section>
 
@@ -436,61 +455,61 @@
   <hr>
 
   <div class="row" id="editor-pick">
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/stock-image-seismogram.jpg" alt="image">
-      <figcaption><a href="#">TECH & SCIENCE</a></figcaption>
+      <a href="#">TECH & SCIENCE</a>
       <h3><a href="#">California Hit By 7 Earthquakes at San Andreas Fault Junction</a></h3>
       <p>The quakes occurred along the Mendocino Fracture Zone at the junction between the San Andreas Fault and Cascadia Subduction Zone.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/supermoon.jpg" alt="image">
-      <figcaption><a href="#">TECH & SCIENCE</a></figcaption>
+      <a href="#">TECH & SCIENCE</a>
       <h3><a href="#">Full Worm Supermoon to Appear in Sky Tonight: How and When to Watch</a></h3>
       <p>This full moon is the second of four consecutive supermoons in 2020.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/coronavirus.jpg" alt="image">
-      <figcaption><a href="#">POLITICS</a></figcaption>
+      <a href="#">POLITICS</a>
       <h3><a href="#">Dems Taking More Precautions Than Republicans for Coronavirus Spread: Poll</a></h3>
       <p>Fifty-four percent of Republicans said they haven't changed their daily routine whatsoever, compared with just 40 percent of Democrats who say they haven't.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/nazi-concentration-camp.jpg" alt="image">
-      <figcaption><a href="#">U.S.</a></figcaption>
+      <a href="#">U.S.</a>
       <h3><a href="#">Ex-Nazi Concentration Camp Guard Who Still Receives Pension to be Deported</a></h3>
       <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/tennessee-ohio-class-submarine-low-yield-warhead-missile.jpg" alt="image">
-      <figcaption><a href="#">WORLD</a></figcaption>
+      <a href="#">WORLD</a>
       <h3><a href="#">Russia Says New U.S. Weapon Threatens Nuclear War</a></h3>
       <p>"Washington is not just modernizing its nuclear forces, but is striving to give them new capabilities, which significantly expands the likelihood of their use," Russian Foreign Ministry spokesperson Maria Zakharova said.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/mohammed-bin-salman.jpg" alt="image">
-      <figcaption><a href="#">WORLD</a></figcaption>
+      <a href="#">WORLD</a>
       <h3><a href="#">Saudi Crown Prince Detains King's Brother, Other Royals, in Power Move</a></h3>
       <p>Included among the arrested is Mohammed bin Nayef, the former crown prince of Saudi Arabia.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/coronavirus-covid19-kenya-getty.jpg" alt="image">
-      <figcaption><a href="#">HEALTH</a></figcaption>
+      <a href="#">HEALTH</a>
       <h3><a href="#">COVID-19 Will Only Cause 'Mild Illness' in 'Vast Majority of People'—Expert</a></h3>
       <p>Over 100,00 people have caught COVID-19 and more than 3,000 have died, according to Johns Hopkins University.</p>
-    </figure>
+    </div>
 
-    <figure class="col-3">
+    <div class="col-3">
       <img src="images/editorsPick/ken-burke.jpg" alt="image">
-      <figcaption><a href="#">U.S.</a></figcaption>
+      <a href="#">U.S.</a>
       <h3><a href="#">Colorado Congressman Challenges Biden and O'Rourke to 'Come and Take' Rifle</a></h3>
       <p>Rep. Ken Buck criticized for video he posted onto Facebook denouncing gun control reform.</p>
-    </figure>
+    </div>
   </div>
 </section>
 
@@ -541,6 +560,7 @@
         <h3><a href="#">The New Documentary Trying to Save the Most Trafficked Mammals in the World</a></h3>
       </figcaption>
     </figure>
+  </div>
 </section>
 
 <!-- U.S. -->
@@ -552,19 +572,15 @@
     <div class="col-8">
       <!-- TWO IMAGES IN ROW -->
       <div class="row">
-        <figure class="col-6">
-          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" alt="image"></a>
-          <figcaption>
-            <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
-          </figcaption>
-        </figure>
+        <div class="col-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="image-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
     
-        <figure class="col-6">
-          <a href="#"><img src="images/US/spaghetti-meatballs.webp" alt="image"></a>
-          <figcaption>
-            <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
-          </figcaption>
-        </figure>
+        <div class="col-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="image-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
       </div>
     </div>
 
