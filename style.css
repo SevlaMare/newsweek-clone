@@ -146,6 +146,32 @@ nav p {
   color: #f72210;
 }
 
+/* --- SIGN UP --- */
+#newsletter {
+  border: solid 1px #e5e5e5;
+  background: #f4f5f6;
+}
+
+#btn-signup-1 {
+  color: #fff;
+  font-weight: 700;
+  background: #666;
+}
+
+#btn-signup-1:hover {
+  text-decoration: none;
+  background-color: #999;
+}
+
+#btn-signup-2 {
+  color: #666;
+  line-height: 4;
+}
+
+#btn-signup-2:hover {
+  text-decoration: none;
+}
+
 /* --- MISCELLANEOUS --- */
 .img-65 {
   width: 65px;
