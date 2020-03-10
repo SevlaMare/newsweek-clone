@@ -201,20 +201,41 @@ nav p {
   line-height: 0.5rem;
 }
 
-/* --- FOOTER --- */
-#logo-footer {
-  width: 300px;
+/* --- MAGAZINE --- */
+#magazine span {
+  padding: 4px;
+  margin-right: 10px;
+  color: #fff;
+  background: #f72210;
 }
 
-/* SECTIONS */
 #magazine img {
   width: 100%;
+  margin-bottom: 10px;
 }
 
+#magazine-odd a {
+  font-weight: 700;
+  color: #111;
+  background: #f4f5f6;
+}
+
+#magazine span + a {
+  font-weight: 600;
+  color: #f72210;
+}
+
+/* --- EDITOR --- */
 #editor-pick img {
   width: 100%;
 }
 
+/* --- SLIDES --- */
 #slides-show img {
   width: 100%;
+}
+
+/* --- FOOTER --- */
+#logo-footer {
+  width: 300px;
 }
