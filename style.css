@@ -26,7 +26,7 @@ main {
 h2 {
   font-size: 16px;
   font-weight: 700;
-  color: lightgray;
+  color: #333;
 }
 
 h3 a {
@@ -230,9 +230,42 @@ nav p {
   width: 100%;
 }
 
+#editor-pick img + a {
+  color: #f72210;
+  font-weight: 600;
+  padding: 5px 10px;
+  background: #eaebee;
+  position: relative;
+  top: -26px;
+}
+
 /* --- SLIDES --- */
 #slides-show img {
   width: 100%;
+}
+
+/* --- US --- */
+.title-red {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f72210;
+}
+
+/* --- SUBSCRIBE --- */
+#magazines {
+  background: #f4f5f6;
+}
+
+.newsleter-bg {
+  max-width: 180px;
+  height: 300px;
+  background-image: url("images/subscribe/starting5-homepage.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#etc {
+  border: solid 1px #e5e5e5;
 }
 
 /* --- FOOTER --- */
