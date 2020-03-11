@@ -256,16 +256,41 @@ nav p {
   background: #f4f5f6;
 }
 
+#news-move {
+  position: absolute;
+  left: 200px;
+  width: 160px;
+}
+
 .newsleter-bg {
   max-width: 180px;
-  height: 300px;
+  min-height: 270px;
   background-image: url("images/subscribe/starting5-homepage.png");
   background-position: center center;
   background-repeat: no-repeat;
+  position: relative;
 }
 
-#etc {
+#newsletter-bottom {
   border: solid 1px #e5e5e5;
+}
+
+#offset {
+  position: relative;
+  top: 15px;
+  left: -90px;
+}
+
+#btn-f {
+  font-weight: 700;
+  padding: 8px 10px;
+  color: #fff;
+  background: #f72210;
+}
+
+#ml-n1 {
+  position: relative;
+  left: -100px;
 }
 
 /* --- FOOTER --- */
