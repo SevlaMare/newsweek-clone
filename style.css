@@ -253,6 +253,7 @@ nav p {
 
 /* --- SUBSCRIBE --- */
 #magazines {
+  min-height: 300px;
   background: #f4f5f6;
 }
 
@@ -264,7 +265,7 @@ nav p {
 
 .newsleter-bg {
   max-width: 180px;
-  min-height: 270px;
+  min-height: 300px;
   background-image: url("images/subscribe/starting5-homepage.png");
   background-position: center center;
   background-repeat: no-repeat;
@@ -281,7 +282,7 @@ nav p {
   left: -90px;
 }
 
-#btn-f {
+.btn-f {
   font-weight: 700;
   padding: 8px 10px;
   color: #fff;
@@ -305,14 +306,12 @@ nav p {
 
 #footer-editions a {
   padding: 0 10px;
-  border-right: 1px solid #e5e5e5;
   color: #999;
 }
 
 #footer-links a {
   padding-right: 10px;
   margin-left: 10px;
-  border-right: 1px solid #e5e5e5;
   color: #999;
 }
 
@@ -320,6 +319,22 @@ nav p {
   margin-left: 0;
 }
 
-#footer-links a:last-child {
-  margin-left: 0;
+@media (max-width: 411px) {
+  #ml-n1 {
+    position: relative;
+    left: 0px;
+    top: 20px;
+  }
+
+  #offset {
+    position: absolute;
+    top: 75px;
+    left: 185px;
+  }
+}
+
+@media (max-width: 768px) {
+  #magazines {
+    display: initial;
+  }
 }
