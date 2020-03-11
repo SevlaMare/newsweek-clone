@@ -297,3 +297,29 @@ nav p {
 #logo-footer {
   width: 300px;
 }
+
+.icon-media {
+  width: 20px;
+  margin-right: 10px;
+}
+
+#footer-editions a {
+  padding: 0 10px;
+  border-right: 1px solid #e5e5e5;
+  color: #999;
+}
+
+#footer-links a {
+  padding-right: 10px;
+  margin-left: 10px;
+  border-right: 1px solid #e5e5e5;
+  color: #999;
+}
+
+#footer-links a:first-child {
+  margin-left: 0;
+}
+
+#footer-links a:last-child {
+  margin-left: 0;
+}
