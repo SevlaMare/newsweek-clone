@@ -18,10 +18,6 @@ main {
   max-width: 1280px;
 }
 
-.mb-60 {
-  margin-top: 20px;
-}
-
 /* --- TYPOGRAPHY --- */
 h2 {
   font-size: 16px;
@@ -82,8 +78,6 @@ nav a:hover {
 }
 
 #footer-links a {
-  padding-right: 10px;
-  margin-left: 10px;
   color: #999;
 }
 
@@ -120,10 +114,6 @@ nav a:hover {
   background: #eaebee;
   position: relative;
   top: -26px;
-}
-
-#footer-links a:first-child {
-  margin-left: 0;
 }
 
 #nav-links a:last-child {
@@ -236,14 +226,12 @@ nav p {
 /* --- MAGAZINE --- */
 #magazine span {
   padding: 4px;
-  margin-right: 10px;
   color: #fff;
   background: #f72210;
 }
 
 #magazine img {
   width: 100%;
-  margin-bottom: 10px;
 }
 
 /* --- EDITOR --- */
@@ -313,7 +301,6 @@ nav p {
 
 .icon-media {
   width: 20px;
-  margin-right: 10px;
 }
 
 @media (max-width: 411px) {
