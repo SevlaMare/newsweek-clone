@@ -35,28 +35,10 @@ h3 a {
   color: #333;
 }
 
-#more-stories h3 a {
-  font-size: 1rem;
-}
-
-h3 a:hover {
-  color: #333;
-  text-decoration-color: #f72210;
-}
-
 h4 a {
   font-size: 17px;
   font-weight: 700;
   color: #333;
-}
-
-h4 a:hover {
-  color: #f72210;
-  text-decoration: none;
-}
-
-#opinion h4 a:hover {
-  color: #f72210;
 }
 
 h5 a {
@@ -65,13 +47,54 @@ h5 a {
   color: #444;
 }
 
-p {
-  font-size: 15px;
+h3 a:hover {
   color: #333;
+  text-decoration-color: #f72210;
 }
 
-#culture-travel p {
+h4 a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#magazine-odd a {
+  font-weight: 700;
+  color: #111;
+  background: #f4f5f6;
+}
+
+#footer-editions a {
+  padding: 0 10px;
   color: #999;
+}
+
+#nav-links a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  padding: 3px 20px;
+  border-right: solid 1px lightgray;
+}
+
+#footer-links a {
+  padding-right: 10px;
+  margin-left: 10px;
+  color: #999;
+}
+
+#opinion h4 a {
+  color: #333;
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+#more-stories h3 a {
+  font-size: 1rem;
 }
 
 #culture-travel h5 a {
@@ -83,6 +106,50 @@ p {
   font-weight: 600;
   text-decoration: none;
   color: #333;
+}
+
+#magazine span + a {
+  font-weight: 600;
+  color: #f72210;
+}
+
+#editor-pick img + a {
+  color: #f72210;
+  font-weight: 600;
+  padding: 5px 10px;
+  background: #eaebee;
+  position: relative;
+  top: -26px;
+}
+
+#footer-links a:first-child {
+  margin-left: 0;
+}
+
+#nav-links a:last-child {
+  border-right: none;
+}
+
+#nav-links a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+#opinion h4 a:hover {
+  color: #f72210;
+}
+
+p {
+  font-size: 15px;
+  color: #333;
+}
+
+nav p {
+  color: #fff;
+}
+
+#culture-travel p {
+  color: #999;
 }
 
 /* --- NAVBAR --- */
@@ -119,35 +186,6 @@ p {
 .white-link {
   color: #fff;
   font-weight: 700;
-}
-
-#nav-links a {
-  font-size: 1rem;
-  font-weight: 700;
-  color: black;
-}
-
-#nav-links a {
-  padding: 3px 20px;
-  border-right: solid 1px lightgray;
-}
-
-#nav-links a:last-child {
-  border-right: none;
-}
-
-nav a:hover {
-  color: #fff;
-  text-decoration: none;
-}
-
-#nav-links a:hover {
-  color: #f72210;
-  text-decoration: none;
-}
-
-nav p {
-  color: #fff;
 }
 
 #btn-sub:hover {
@@ -195,12 +233,6 @@ nav p {
   border-top: solid 4px #1c87fb;
 }
 
-#opinion h4 a {
-  color: #333;
-  font-size: 1rem;
-  line-height: 0.5rem;
-}
-
 /* --- MAGAZINE --- */
 #magazine span {
   padding: 4px;
@@ -214,29 +246,9 @@ nav p {
   margin-bottom: 10px;
 }
 
-#magazine-odd a {
-  font-weight: 700;
-  color: #111;
-  background: #f4f5f6;
-}
-
-#magazine span + a {
-  font-weight: 600;
-  color: #f72210;
-}
-
 /* --- EDITOR --- */
 #editor-pick img {
   width: 100%;
-}
-
-#editor-pick img + a {
-  color: #f72210;
-  font-weight: 600;
-  padding: 5px 10px;
-  background: #eaebee;
-  position: relative;
-  top: -26px;
 }
 
 /* --- SLIDES --- */
@@ -304,25 +316,10 @@ nav p {
   margin-right: 10px;
 }
 
-#footer-editions a {
-  padding: 0 10px;
-  color: #999;
-}
-
-#footer-links a {
-  padding-right: 10px;
-  margin-left: 10px;
-  color: #999;
-}
-
-#footer-links a:first-child {
-  margin-left: 0;
-}
-
 @media (max-width: 411px) {
   #ml-n1 {
     position: relative;
-    left: 0px;
+    left: 0;
     top: 20px;
   }
 
