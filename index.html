@@ -2,103 +2,96 @@
 <html lang="en-US">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsweek</title>
+
+  <!-- Bootstrap 4 -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+  <!-- Style overwrite -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Material Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <title>Newsweek</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- NAVBAR STICKY -->
-<nav class="nav sticky-top bg-dark">
-  <div>
-    <i class="material-icons">wb_cloudy</i>
-    <a class="nav-link" href="#">19° São Paulo, BR ></a>
-    <a class="nav-link" href="#">Sun, Mar 01, 2020</a>
-  </div>
+<!-- LAPTOP NAVBAR -->
+<div class="d-none d-lg-block">
+  <nav class="d-flex justify-content-between align-items-end px-2 py-2 pb-3 bg-red">
+    <div class="pl-3 pt-2">
+      <a class="white-link" href="#">
+        <img src="images/icons/cloud.png" alt="icon" id="icon-cloud">
+        19° São Paulo, BR >
+      </a>
+      <p class="pt-2">Sun, Mar 01, 2020</p>
+    </div>
 
-  <a class="navbar-brand" href="#">Newsweek</a>
+    <a class="navbar-brand" href="#"><img src="images/icons/logo.png" alt="logo" id="icon-logo-nav"></a>
 
-  <div>
-    <a class="nav-link" href="#">SIGN IN</a>
-    <a class="nav-link" href="#">SUBSCRIBE</a>
-  </div>
-</nav>
+    <!-- BUTTONS -->
+    <div>
+      <span>
+        <a href="#" class="white-link mr-2">SIGN IN</a>
+        <a href="#" class="px-3 py-1 btn-white" id="btn-sub">SUBSCRIBE ></a>
+      </span>
+    </div>
+  </nav>
+</div>
 
-<!-- NAVBAR MAIN -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- ICON TO TOGGLE MENU -->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#my-nav">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<!-- LINKS -->
+<div class="d-none d-lg-block">
+  <nav class="d-flex justify-content-between pt-3">
+    <div id="nav-links">
+      <a href="#" class="py-1 px-3">U.S.</a>
+      <a href="#" class="py-1 px-3">World</a>
+      <a href="#" class="py-1 px-3">Business</a>
+      <a href="#" class="py-1 px-3">Tech & Science</a>
+      <a href="#" class="py-1 px-3">Culture</a>
+      <a href="#" class="py-1 px-3">Newsgeek</a>
+      <a href="#" class="py-1 px-3">Sports</a>
+      <a href="#" class="py-1 px-3">Health</a>
+      <a href="#" class="py-1 px-3">The Debate</a>
+      <a href="#" class="py-1 px-3">Vantage</a>
+      <a href="#" class="py-1 px-3">Weather</a>
+    </div>
+  
+    <div class="pr-2">
+      <span>Search</span>
+      <img src="images/icons/search.svg" alt="icon" class="ml-2" id="icon-search">
+    </div>
+  </nav>
 
-  <!-- HAMBURGER MENU -->
-  <div class="collapse navbar-collapse" id="my-nav">
-    <!-- LINKS -->
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="#">U.S.</a>
-      </li>
+  <hr>
+</div>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">World</a>
-      </li>
+<!-- MOBILE NAVBAR -->
+<div class="sticky-top d-lg-none">
+  <nav class="d-flex justify-content-between align-items-center bg-red p-3" id="nav-mobile">
+    <img src="images/icons/logo.png" alt="img" id="nav-logo-mob">
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Business</a>
-      </li>
+    <span>
+      <a href="#" class="white-link mr-2">SIGN IN</a>
+      <a href="#" class="px-1 py-1 btn-white">SUBSCRIBE</a>
+      <img src="images/icons/menu.svg" alt="img" class="mx-2" id="icon-menu">
+    </span>
+  </nav>
+</div>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Tech & Science</a>
-      </li>
 
-      <li class="nav-item">
-        <a class="nav-link" href="#">Culture</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Newsgeek</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Sports</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">Health</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link" href="#">The Debate</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#">Vantage</a>
-      </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="#">Weather</a>
-      </li>
-    </ul>
-  </div>
-
-  <i class="material-icons">search</i>
-
-  <!-- SEARCH BAR -->
-  <!-- <form class="form-inline my-2 my-lg-0">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form> -->
-</nav>
-
-<!-- FIRST COLUMN -->
-<section class="container">
-  <div>
+<!-- CONTENT -->
+<main class="container-fluid">
+<!-- HEADER ARTICLES -->
+<section id="grid-1" class="row">
+  <!-- FIRST COLUMN (4x1) -->
+  <div id="featured-stories" class="col-lg-3 col-md-6">
     <h2>FEATURED STORIES</h2>
     <article>
-      <a href="#"><img src="images/featuresStories/joe-biden.jpg" alt="img"></a>
+      <a href="#"><img class="img-fluid" src="images/featuresStories/joe-biden.jpg" alt="img"></a>
       <h3><a href="#">Joe Biden Projected as Winner of South Carolina Primary</a></h3>
       <p>Former Vice President had an overwhelming lead over his Democratic primary opponents during the South Carolina primary on Saturday, getting momentum before the upcoming Super Tuesday.</p>
       <hr>
@@ -107,11 +100,10 @@
       <h4><a href="#">Joe Biden Banks on South Carolina, But What 'Win' Looks Like Open Question</a></h4>
       <hr>
       <h4><a href="#">Who Should You Vote For On Super Tuesday? This Quiz Will Tell You</a></h4>
-      <hr>
     </article>
   
     <article>
-      <a href="#"><img src="images/featuresStories/peace-deal.jpg" alt="img"></a>
+      <a href="#"><img class="img-fluid" src="images/featuresStories/peace-deal.jpg" alt="img"></a>
       <h3><a href="#">Historic Peace Deal Signed by U.S. And Taliban In Effort To End War</a></h3>
       <p>The agreement, signed in Doha, Qatar, marks the first step in the process for achieving more durable peace, a goal that has remained elusive for nearly two decades.</p>
       <hr>
@@ -120,91 +112,809 @@
       <h4><a href="#">Afghanistan Will Need U.S. Support Long After a Taliban Peace Deal: Experts</a></h4>
       <hr>
       <h4><a href="#">Trump: U.S. Should Pass ISIS War to Russia, Iran, Iraq, Syria, Focus on Oil</a></h4>
-      <hr>
     </article>
   
     <article>
-      <a href="#"><img src="images/featuresStories/coronavirus-stock.jpg" alt="img"></a>
-      <h3>Coronavirus Sell-Off Threatens to End Stock Market's Decade-Long Bull Run</h3>
+      <a href="#"><img class="img-fluid" src="images/featuresStories/coronavirus-stock.jpg" alt="img"></a>
+      <h3><a href="#">Coronavirus Sell-Off Threatens to End Stock Market's Decade-Long Bull Run</a></h3>
       <p>The Dow Jones, S&P and Nasdaq correction reflects investors reassessing the potential economic damage caused by the coronavirus.</p>
     </article>
   
     <article>
-      <a href="#"><img src="images/featuresStories/election-polls.jpg" alt="img"></a>
-      <h3>Sanders vs. Trump: What Polls Are Saying About Potential 2020 Matchup</h3>
+      <a href="#"><img class="img-fluid" src="images/featuresStories/election-polls.jpg" alt="img"></a>
+      <h3><a href="#">Sanders vs. Trump: What Polls Are Saying About Potential 2020 Matchup</a></h3>
       <p>The 2020 polls show Senator Bernie Sanders leading President Donald Trump nationally, but how reliable are they months out from an election?</p>
     </article>
   </div>
-</section>
 
-<!-- SECOND COLUMN -->
-<section class="container">
-  <div>
-    <h2>TOP STORY</h2>
-    <article>
-      <a href="#"><img src="images/italy-coronavirus.jpg"></a>
-      <h3><a href="#">First U.S. Coronavirus Death Confirmed in Washington State</a></h3>
-      <p>Several Washington state health agencies confirmed Saturday afternoon that the country's first coronavirus death occurred and that multiple new cases of coronavirus have been detected in the region.</p>
-    </article>
-
-    <!-- COLUMN 3x -->
-    <h2><a href="#">CULTURE & TRAVEL</a></h2>
-    <div>
+  <!-- SECOND COLUMN -->
+  <div class="col-md-6">
+    <!-- TOP STORY (1x1) -->
+    <div id="top-story">
+      <h2>TOP STORY</h2>
       <article>
-        <img src="images/cultureTravel/oscars.jpg">
-        <h3><a href="#">BTS and 'Parasite' Director Donate $164,000 to Coronavirus Relief Efforts</a></h3>
-        <p>The money donated by the artists (who were both born in Daegu, the epicenter of the outreak) will go towards purchasing face masks and hand sanitizers for those in need.</p>
-      </article>
-
-      <article>
-        <img src="images/cultureTravel/cul-map-libraries-04.jpg">
-        <h3><a href="#">9 of the Most Innovative Libraries Around the World</a></h3>
-        <p>From camels delivering books to remote areas in Kenya to book-carrying-robots in Sydney, these unique libraries keep the magic of reading alive.</p>
-      </article>
-
-      <article>
-        <img src="images/cultureTravel/kermode-bear.jpg">
-        <h3><a href="#">In Search of the Elusive Spirit Bear in the 'Amazon of the North'</a></h3>
-        <p>This is the most intact coastal temperate rainforest left on Earth and also home to the rare white Kermode Bear.</p>
+        <a href="#"><img src="images/italy-coronavirus.jpg" class="img-fluid" alt="image"></a>
+        <h3><a href="#">First U.S. Coronavirus Death Confirmed in Washington State</a></h3>
+        <p>Several Washington state health agencies confirmed Saturday afternoon that the country's first coronavirus death occurred and that multiple new cases of coronavirus have been detected in the region.</p>
       </article>
     </div>
- 
 
-    <!-- ROW 11x -->
-    <h2>MORE STORIES</h2>
-    <hr>
-    <div>
+    <!-- CULTURE & TRAVEL (1x3) -->
+    <div id="culture-travel">
+      <h2>CULTURE & TRAVEL</h2>
+      <div class="row">
+        <article class="col-md">
+          <img src="images/cultureTravel/oscars.jpg" class="img-fluid" alt="image">
+          <h5><a href="#">BTS and 'Parasite' Director Donate $164,000 to Coronavirus Relief Efforts</a></h5>
+          <p>The money donated by the artists (who were both born in Daegu, the epicenter of the outreak) will go towards purchasing face masks and hand sanitizers for those in need.</p>
+        </article>
+  
+        <article class="col-md">
+          <img src="images/cultureTravel/cul-map-libraries-04.jpg" class="img-fluid" alt="image">
+          <h5><a href="#">9 of the Most Innovative Libraries Around the World</a></h5>
+          <p>From camels delivering books to remote areas in Kenya to book-carrying-robots in Sydney, these unique libraries keep the magic of reading alive.</p>
+        </article>
+  
+        <article class="col-md">
+          <img src="images/cultureTravel/kermode-bear.jpg" class="img-fluid" alt="image">
+          <h5><a href="#">In Search of the Elusive Spirit Bear in the 'Amazon of the North'</a></h5>
+          <p>This is the most intact coastal temperate rainforest left on Earth and also home to the rare white Kermode Bear.</p>
+        </article>
+      </div>
+    </div>
+
+    <!-- MORE STORIES (11x1) -->
+    <div id="more-stories">
+      <h2>MORE STORIES</h2>
+      <hr>
+      <div class="more-stories">
+        <article>
+          <a href="#"><img src="images/moreStories/google-doodle.png" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Leap Day 2020: Google Doodle Marks the Quadrennial Event of February 29</a></h3>
+          <p class="ml-95">There are around 200,000 Americans, and five million people worldwide, who are "leapers", those born on February 29.</p>  
+          <hr>
+        </article>
+    
+        <article>
+          <a href="#"><img src="images/moreStories/super-tuesday-primary-bernie-sanders.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Sanders' Super Tuesday Performance Could Turn Race Into Dramatic Spectacle</a></h3>
+          <p>A sector of moderates in Congress, particularly vulnerable Democrats in swing districts, are beginning to discuss strategies to stop Senator Bernie Sanders from appearing at the top of the ticket.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/democrats.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Lichtman Predicts DNC Will Have Brokered Convention Unless Sanders Wins</a></h3>
+          <p>"To knock [Sanders] out -- that would be a big surprise, but I think you could make it close enough to go into multiple rounds of voting, particularly if some of the lesser contenders win some primaries," Allan Lichtman told Newsweek.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/south-carolina-prepares-2020-democratic-primary.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">What Previous South Carolina Primary Winners Mean for 2020</a></h3>
+          <p>"If you look at recent history, the winner of South Carolina has been able to use that as momentum to go on and win the nomination," a political scientist told Newsweek.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/us-russia-turkey-syria-idlib-airstrikes.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">U.S. Should Threaten Russia to Secure Idlib Cease-Fire, Former Envoy Says</a></h3>
+          <p>The conflict in northwestern Syria is in danger of spilling over after a Syrian airstrike killed 33 Turkish soldiers on Thursday.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/gavin-newsom.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">'8,400 Plus' Monitored for Coronavirus, Says California Governor</a></h3>
+          <p>Governor Gavin Newsom said Thursday that "8,400 plus" from both repatriation flights and "more traditional commercial flights which came in from points of concern and potential points of contact, particularly in Asia" are being monitored for coronavirus.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/hillary-clinton.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Hillary Clinton Will Start Podcast Inspired by Comedian Conan O'Brien: Report</a></h3>
+          <p>"We do trust her to make the right decisions on how to proceed," said National Organization for Women President Toni Van Pelt.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/ok-boomer.jpg" class="float-left mr-3" alt="img"></a>
+          <h3><a href="#">Boomers? OK, Says Poll Showing Americans Don't Blame Them for All Problems</a></h3>
+          <p>The survey by Ipsos found that a plurality of boomers felt their generation had a positive impact on modern American society.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/syria-war-idlib-saraqib-turkey-russia.jpg" class="float-left mr-3 mb-3" alt="img"></a>
+          <h3><a href="#">Russia and Turkey's Conflict in Syria Escalates Amid New Troop Deaths</a></h3>
+          <p>Turkish Hatay province Governor Rahmi Dogan said that at least 33 Turkish troops were killed in airstrikes blamed on the Syrian government against their positions in the country's northwestern province of Idlib.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/michael-bloomberg.jpg" class="float-left mr-3 mb-3" alt="img"></a>
+          <h3><a href="#">Bloomberg Says President Doesn't Need to Be 'College Debater-in-Chief'</a></h3>
+          <p>"I believe we need a leader who's ready to be commander-in-chief, not the college debater-in-chief," said former New York City Mayor Michael Bloomberg during a campaign rally speech on Thursday in Houston, Texas.</p>
+          <hr>
+        </article>
+  
+        <article>
+          <a href="#"><img src="images/moreStories/coronavirus-china.jpg" class="float-left mr-3 mb-3" alt="img"></a>
+          <h3><a href="#">Video Shows What Happens if You Evade Coronavirus Checkpoint in China</a></h3>
+          <p>The video shows a training exercise of officers stopping a person, detaining them and spraying disinfectant on the scene.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- THIRD COLUMN -->
+  <div class="col-lg-3">
+    <!-- OPINION (6x1) -->
+    <div id="opinion">
+      <h2>OPINION</h2>
       <article>
-        <a href="#"><img src="images/moreStories/google-doodle.png" alt="img"></a>
-        <h3><a href="#">Leap Day 2020: Google Doodle Marks the Quadrennial Event of February 29</a></h3>
-        <p>There are around 200,000 Americans, and five million people worldwide, who are "leapers", those born on February 29.</p>
-        <hr>
+        <a href="#"><img src="images/opinion/daniel-r-depetris.png" class="float-left mr-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">No Compelling National Security Argument to Keep U.S. Troops in Afghanistan</a></h4>
+          <p>BY DANIEL R. DEPETRIS</p>
+        </div>
+      </article>
+
+      <hr>
+    
+      <article>
+        <a href="#"><img src="images/opinion/ariel-cohen.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">Can the American-European Alliance Survive?</a></h4>
+          <p>BY ARIEL COHEN</p>
+        </div>
+      </article>
+
+      <hr>
+      
+      <article>
+        <a href="#"><img src="images/opinion/andrew-mcbride.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">The Roger Stone Sentence Was Appropriate. The Guidelines Need to Change</a></h4>
+          <p>BY ANDREW MCBRIDE</p>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <a href="#"><img src="images/opinion/ann-olivarius.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">Weinstein's Verdict Is Less Than We Deserved—Yet More Than We Dared Hope For</a></h4>
+          <p>BY ANN OLIVARIUS</p>
+        </div>
+      </article>
+
+      <hr>
+      
+      <article>
+        <a href="#"><img src="images/opinion/david-miliband.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">Idlib Is the New Face of Conflict. The World Needs to Catch Up</a></h4>
+          <p>BY DAVID MILIBAND</p>
+        </div>
+      </article>
+
+      <hr>
+
+      <article>
+        <a href="#"><img src="images/opinion/newt-gingrich.png" class="float-left mr-3 mb-3" alt="picture"></a>
+        <div class="modal-open">
+          <h4><a href="#">The Stature Gap Between Trump and the Bickering Democrats Is Growing</a></h4>
+          <p>BY NEWT GINGRICH</p>
+        </div>
+      </article>
+    </div>
+
+    <!-- THE DEBATE (2x1) -->
+    <div id="the-debate">
+      <article>
+      <h2>THE DEBATE</h2>
+        <div id="deb-author1">
+          <a href="#"><img src="images/opinion/doctors-medicare-all.jpg" class="float-left mr-2" alt="image"></a>
+          <p><a href="#">Doctors Who Support Medicare for All Should Be Careful What They Wish For</a></p>
+          <hr class="clear-left">
+          <a href="#"><img src="images/opinion/sally-pipes.png" class="float-right img-65" alt="image"></a>
+          <p>BY <strong>SALLY C. PIPES</strong></p>
+        </div>
+        <p id="vs" class="text-center clear">VS</p>
+        <div id="deb-author2">
+          <a href="#"><img src="images/opinion/bernie-sanders-america.jpg" class="float-left mr-2" alt="image"></a>
+          <p><a href="#">Bernie's Plans Are Ambitious. But They Cost Peanuts Compared to Inaction</a></p>
+          <hr class="clear-left">
+          <a href="#"><img src="images/opinion/robert-reich.png" class="float-right img-65" alt="image"></a>
+          <p>BY <strong>ROBERT REICH</strong></p>
+        </div>
+      </article>
+    </div>
+
+    <!-- LAST NEWS (7x1) -->
+    <div id="last-news">
+      <h2 class="clear">LAST NEWS</h2>
+      <article>
+        <img src="images/opinion/powerball-mega-millions-tickets.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Powerball Drawing For 02/29/20: Saturday Jackpot is $80 Million</a></h4>
       </article>
   
+      <hr class="clear">
+  
       <article>
-        <a href="#"><img src="images/moreStories/super-tuesday-primary-bernie-sanders.jpg" alt="img"></a>
-        <h3><a href="#">Sanders' Super Tuesday Performance Could Turn Race Into Dramatic Spectacle</a></h3>
-        <p>A sector of moderates in Congress, particularly vulnerable Democrats in swing districts, are beginning to discuss strategies to stop Senator Bernie Sanders from appearing at the top of the ticket.</p>
-        <hr>
+        <img src="images/opinion/trump-cpac-democrats-socialism.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">At CPAC, Trump Says 'Far-Left Radicals' Want America to Embrace Socialism</a></h4>
       </article>
+  
+      <hr class="clear">
+  
+      <article>
+        <img src="images/opinion/trump-pence.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">U.S. Adopts Iran Travel Restriction, Increases Advisory For 2 Countries</a></h4>
+      </article>
+  
+      <hr class="clear">
+  
+      <article>
+        <img src="images/opinion/michael-smerconish-cnn-bernie-sanders.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">CNN Blasted for Segment Comparing Bernie Sanders' Rise to Coronavirus</a></h4>
+      </article>
+  
+      <hr class="clear">
+  
+      <article>
+        <img src="images/opinion/trump.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Donald Trump Criticizes Mitt Romney For His Impeachment Trial Vote</a></h4>
+      </article>
+  
+      <hr class="clear">
+  
+      <article>
+        <img src="images/opinion/mikey-garcia.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Garcia vs. Vargas: All You Need to Know Ahead of WBC Welterweight Fight</a></h4>
+      </article>
+  
+      <hr class="clear">
+  
+      <article>
+        <img src="images/opinion/barack-obama.jpg" class="float-left mr-3" alt="image">
+        <h4><a href="#">Most Democrats Wrongly Believe Barack Obama Has Endorsed a 2020 Candidate</a></h4>
+      </article>
+    </div>
 
-      <article>
-        <a href="#"><img src="images/moreStories/democrats.jpg" alt="img"></a>
-        <h3><a href="#">Lichtman Predicts DNC Will Have Brokered Convention Unless Sanders Wins</a></h3>
-        <p>"To knock [Sanders] out -- that would be a big surprise, but I think you could make it close enough to go into multiple rounds of voting, particularly if some of the lesser contenders win some primaries," Allan Lichtman told Newsweek.</p>
-        <hr>
-      </article>
+    <!-- SIGN UP NEWSLETTER -->
+    <div id="newsletter" class="m-4 p-4 clear mx-auto">
+      <img src="images/logo-icon.png" class="float-left mr-2" alt="img">
+      <p>SIGN UP FOR OUR <br> NEWSLETTER</p>
+      <a href="#" class="p-2" id="btn-signup-1">SIGN UP ></a><br>
+      <a href="#" id="btn-signup-2">Update your preferences >></a>
+    </div>
+  </div>
+</section>
 
-      <article>
-        <a href="#"><img src="images/moreStories/democrats.jpg" alt="img"></a>
-        <h3><a href="#">What Previous South Carolina Primary Winners Mean for 2020</a></h3>
-        <p>"To knock [Sanders] out -- that would be a big surprise, but I think you could make it close enough to go into multiple rounds of voting, particularly if some of the lesser contenders win some primaries," Allan Lichtman told Newsweek.</p>
-        <hr>
-      </article>
+<!-- IN THE MAGAZINE (2x8) -->
+<section>
+  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo" class="mr-3">IN THE MAGAZINE</h2>
+  <hr>
+
+  <div class="row" id="magazine">
+    <figure class="col-md-3" id="magazine-odd">
+      <img src="images/inTheMagazine/march-06-2020-cover.jpg" alt="image" class="mb-2">
+      <figcaption><a href="#">SEE ALL FEATURES ></a></figcaption>
+    </figure>
+  
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/fea-toxicstress-banner.webp" alt="image" class="mb-2">
+      <span class="mr-2 p-1">COVER</span><a href="#">HEALTH</a>
+      <h3><a href="#">Yes, Stress Really Is Making You Sick</a></h3>
+    </div>
+  
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/per-financial-infidelity.jpg" alt="image" class="mb-2">
+      <span class="mr-2 p-1">PERISCOPE</span class="mb-2"><a href="#">BUSINESS</a>
+      <h3><a href="#">Keeping Money Secrets From Your Partner May Not Be Such a Bad Thing</a></h3>
+    </div>
+  
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/william-barr.jpg" alt="image" class="mb-2">
+      <span class="mr-2 p-1">PERISCOPE</span><a href="#">POLITICS</a>
+      <h3><a href="#">Legal Historian: AG Barr's Actions Are 'Remarkably Not Normal'</a></h3>
+    </div>
+
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/cul-kiss-banner.webp" alt="image" class="mb-2">
+      <span class="mr-2 p-1">DOWNTIME</span><a href="#">CULTURE</a>
+      <h3><a href="#">It Costs $4,000 to go Backstage with KISS</a></h3>
+    </div>
+  
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/cul-map-libraries-04.jpg" alt="image" class="mb-2">
+      <span class="mr-2 p-1">DOWNTIME</span class="mb-2"><a href="#">CULTURE</a>
+      <h3><a href="#">9 of the Most Innovative Libraries Around the World</a></h3>
+    </div>
+  
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/cul-ps-janefonda-banner.jpg" alt="image" class="mb-2">
+      <span class="mr-2 p-1">DOWNTIME</span><a href="#">CULTURE</a>
+      <h3><a href="#">Jane Fonda Brings Her Climate Change Protest 'Fire Drill Fridays' to L.A.</a></h3>
+    </div>
+  
+    <div class="col-md-3">
+      <img src="images/inTheMagazine/car.png" alt="image" class="mb-2">
+      <h3><a href="#">LAPPING THE FIELD</a></h3>
+    </div>
+  </div>
+</section>
+
+<!-- EDITOR'S PICK -->
+<section>
+  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo" class="icon-section">EDITOR'S PICK</h2>
+  <hr>
+
+  <div class="row" id="editor-pick">
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/stock-image-seismogram.jpg" alt="image">
+      <a href="#" class="py-1 px-2">TECH & SCIENCE</a>
+      <h3><a href="#">California Hit By 7 Earthquakes at San Andreas Fault Junction</a></h3>
+      <p>The quakes occurred along the Mendocino Fracture Zone at the junction between the San Andreas Fault and Cascadia Subduction Zone.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/supermoon.jpg" alt="image">
+      <a href="#" class="py-1 px-2">TECH & SCIENCE</a>
+      <h3><a href="#">Full Worm Supermoon to Appear in Sky Tonight: How and When to Watch</a></h3>
+      <p>This full moon is the second of four consecutive supermoons in 2020.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/coronavirus.jpg" alt="image">
+      <a href="#" class="py-1 px-2">POLITICS</a>
+      <h3><a href="#">Dems Taking More Precautions Than Republicans for Coronavirus Spread: Poll</a></h3>
+      <p>Fifty-four percent of Republicans said they haven't changed their daily routine whatsoever, compared with just 40 percent of Democrats who say they haven't.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/nazi-concentration-camp.jpg" alt="image">
+      <a href="#" class="py-1 px-2">U.S.</a>
+      <h3><a href="#">Ex-Nazi Concentration Camp Guard Who Still Receives Pension to be Deported</a></h3>
+      <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/tennessee-ohio-class-submarine-low-yield-warhead-missile.jpg" alt="image">
+      <a href="#" class="py-1 px-2">WORLD</a>
+      <h3><a href="#">Russia Says New U.S. Weapon Threatens Nuclear War</a></h3>
+      <p>"Washington is not just modernizing its nuclear forces, but is striving to give them new capabilities, which significantly expands the likelihood of their use," Russian Foreign Ministry spokesperson Maria Zakharova said.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/mohammed-bin-salman.jpg" alt="image">
+      <a href="#" class="py-1 px-2">WORLD</a>
+      <h3><a href="#">Saudi Crown Prince Detains King's Brother, Other Royals, in Power Move</a></h3>
+      <p>Included among the arrested is Mohammed bin Nayef, the former crown prince of Saudi Arabia.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/coronavirus-covid19-kenya-getty.jpg" alt="image">
+      <a href="#" class="py-1 px-2">HEALTH</a>
+      <h3><a href="#">COVID-19 Will Only Cause 'Mild Illness' in 'Vast Majority of People'—Expert</a></h3>
+      <p>Over 100,00 people have caught COVID-19 and more than 3,000 have died, according to Johns Hopkins University.</p>
+    </div>
+
+    <div class="col-lg-3 col-md-6 col-sm-12">
+      <img src="images/editorsPick/ken-burke.jpg" alt="image">
+      <a href="#" class="py-1 px-2">U.S.</a>
+      <h3><a href="#">Colorado Congressman Challenges Biden and O'Rourke to 'Come and Take' Rifle</a></h3>
+      <p>Rep. Ken Buck criticized for video he posted onto Facebook denouncing gun control reform.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED SLIDESHOWS -->
+<section>
+  <h2 class="text-center"><img src="images/logo-icon.png" alt="logo" class="icon-section">FEATURED SLIDESHOWS</h2>
+  <hr>
+
+  <div class="row" id="slides-show">
+    <figure class="col-md-4 col-sm-12">
+      <a href="#"><img src="images/slides/tozeur-tunisia.webp" alt="image"></a>
+      <figcaption>
+        <h3><a href="#">Relive the 'Star Wars' Saga at These Filming Locations</a></h3>
+      </figcaption>
+    </figure>
+
+    <figure class="col-md-4 col-sm-12">
+      <a href="#"><img src="images/slides/eyjafjallajokull-iceland.webp" alt="image"></a>
+      <figcaption>
+        <h3><a href="#">Active Volcanoes Around the World That Could Erupt at Any Moment</a></h3>
+      </figcaption>
+    </figure>
+
+    <figure class="col-md-4 col-sm-12">
+      <a href="#"><img src="images/slides/lipschutz-living-room-hotel-chelsea.webp" alt="image"></a>
+      <figcaption>
+        <h3><a href="#">Inside the Last Bohemian Apartments of the Storied Hotel Chelsea</a></h3>
+      </figcaption>
+    </figure>
+
+    <figure class="col-md-4 col-sm-12">
+      <a href="#"><img src="images/slides/muir-pass-great-alone.webp" alt="image"></a>
+      <figcaption>
+        <h3><a href="#">The Great Alone: Walking the Pacific Crest Trail</a></h3>
+      </figcaption>
+    </figure>
+
+    <figure class="col-md-4 col-sm-12">
+      <a href="#"><img src="images/slides/galapagos-cerro-brujo.webp" alt="image"></a>
+      <figcaption>
+        <h3><a href="#">Cruise the Galapagos While Conserving Wildlife Found Nowhere Else</a></h3>
+      </figcaption>
+    </figure>
+
+    <figure class="col-md-4 col-sm-12">
+      <a href="#"><img src="images/slides/still-2-eop.webp" alt="image"></a>
+      <figcaption>
+        <h3><a href="#">The New Documentary Trying to Save the Most Trafficked Mammals in the World</a></h3>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- U.S. -->
+<section>
+  <hr>
+  <h2 class="title-red">U.S.</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <!-- TWO IMAGES IN ROW -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="img-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
+    
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="img-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE IMAGES IN COLUMN -->
+    <div class="col-md-4 col-sm-12">
+      <div class="column">
+        <div>
+          <img src="images/US/biden.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Twitter Marks Edited Biden Video Retweeted by Trump With 'Manipulated' Tag</a></h4>
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/donald-trump-jr.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Spurs Coach Calls Out Trump's Response to Coronavirus</a></h4>  
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/jermone-adams.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Friday Night SmackDown Results March 6</a></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- WORLD -->
+<section>
+  <hr>
+  <h2 class="title-red">World</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <!-- TWO IMAGES IN ROW -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="img-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
+    
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="img-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE IMAGES IN COLUMN -->
+    <div class="col-md-4 col-sm-12">
+      <div class="column">
+        <div>
+          <img src="images/US/biden.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Twitter Marks Edited Biden Video Retweeted by Trump With 'Manipulated' Tag</a></h4>
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/donald-trump-jr.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Spurs Coach Calls Out Trump's Response to Coronavirus</a></h4>  
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/jermone-adams.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Friday Night SmackDown Results March 6</a></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- BUSINESS -->
+<section>
+  <hr>
+  <h2 class="title-red">Bussiness</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <!-- TWO IMAGES IN ROW -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="img-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
+    
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="img-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE IMAGES IN COLUMN -->
+    <div class="col-md-4 col-sm-12">
+      <div class="column">
+        <div>
+          <img src="images/US/biden.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Twitter Marks Edited Biden Video Retweeted by Trump With 'Manipulated' Tag</a></h4>
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/donald-trump-jr.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Spurs Coach Calls Out Trump's Response to Coronavirus</a></h4>  
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/jermone-adams.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Friday Night SmackDown Results March 6</a></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Tech & Science -->
+<section>
+  <hr>
+  <h2 class="title-red">Tech & Science</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <!-- TWO IMAGES IN ROW -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="img-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
+    
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="img-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE IMAGES IN COLUMN -->
+    <div class="col-md-4 col-sm-12">
+      <div class="column">
+        <div>
+          <img src="images/US/biden.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Twitter Marks Edited Biden Video Retweeted by Trump With 'Manipulated' Tag</a></h4>
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/donald-trump-jr.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Spurs Coach Calls Out Trump's Response to Coronavirus</a></h4>  
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/jermone-adams.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Friday Night SmackDown Results March 6</a></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Culture -->
+<section>
+  <hr>
+  <h2 class="title-red">Culture</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <!-- TWO IMAGES IN ROW -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="img-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
+    
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="img-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE IMAGES IN COLUMN -->
+    <div class="col-md-4 col-sm-12">
+      <div class="column">
+        <div>
+          <img src="images/US/biden.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Twitter Marks Edited Biden Video Retweeted by Trump With 'Manipulated' Tag</a></h4>
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/donald-trump-jr.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Spurs Coach Calls Out Trump's Response to Coronavirus</a></h4>  
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/jermone-adams.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Friday Night SmackDown Results March 6</a></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- Sports -->
+<section>
+  <hr>
+  <h2 class="title-red">Sports</h2>
+
+  <div class="row">
+    <div class="col-md-8">
+      <!-- TWO IMAGES IN ROW -->
+      <div class="row">
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/loop-noaa-forecast-monday-through-wednesday.gif" class="img-fluid" alt="image"></a>
+          <h3><a href="#">California to Suffer Potential Flash Flooding This Week</a></h3>
+        </div>
+    
+        <div class="col-md-6">
+          <a href="#"><img src="images/US/spaghetti-meatballs.webp" class="img-fluid" alt="image"></a>
+          <h3><a href="#">National Meatball Day Deals 2020: Discounts and Promo Codes</a></h3>
+        </div>
+      </div>
+    </div>
+
+    <!-- THREE IMAGES IN COLUMN -->
+    <div class="col-md-4 col-sm-12">
+      <div class="column">
+        <div>
+          <img src="images/US/biden.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Twitter Marks Edited Biden Video Retweeted by Trump With 'Manipulated' Tag</a></h4>
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/donald-trump-jr.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Spurs Coach Calls Out Trump's Response to Coronavirus</a></h4>  
+          <hr class="clear">
+        </div>
+
+        <div>
+          <img src="images/US/jermone-adams.webp" class="float-left mr-3" alt="image">
+          <h4><a href="#">Friday Night SmackDown Results March 6</a></h4>  
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- SUBSCRIBE -->
+<hr>
+<section class="row">
+  <div class="col-lg-7">
+    <h4 class="title-red">SUBSCRIBE</h4>
+
+    <div class="p-4 d-flex d-md-block flex-column align-items-center" id="magazines">
+      <img src="images/subscribe/march-06-2020-cover.jpg" class="float-left" alt="image">
+      <img src="images/subscribe/march-13-2020.jpg" class="float-left mr-5" alt="image" id="offset">
+      <div id="ml-n1">
+        <h3>In-depth Stories You Don't See Elsewhere About Topics You Want to Read!</h3>
+        <p>All Access + Weekly Delivery. Choose A Membership That's Perfect for You!</p>
+        <a href="#" class="btn-f p-2">SUBSCRIBE ></a>
+      </div>
     </div>
 
   </div>
+
+  <div class="col-lg-5">
+    <h4 class="title-red">NEWSLETTER</h4>
+    <div id="newsletter-bottom">
+      <div class="newsleter-bg p-4">
+        <div id="news-move">
+          <h3>The Starting 5</h3>
+          <p>Take back your inbox. Sign up for our newsletter and start making sense of the world around you.</p>
+          <a href="#" class="btn-f p-2">SIGN UP ></a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <hr>
+  <div class="d-lg-flex justify-content-between align-items-end m-3">
+    <div class="d-flex align-items-end">
+      <a href="#"><img src="images/icons/logo2.png" alt="img" id="logo-footer"></a>
+      <span>&copy; 2020 NEWSWEEK</span>
+    </div>
+   
+    <div>
+      <img src="images/icons/facebook.svg" alt="ico" class="icon-media mr-2">
+      <img src="images/icons/twitter.svg" alt="ico" class="icon-media mr-2">
+      <img src="images/icons/instagram.svg" alt="ico" class="icon-media mr-2">
+      <img src="images/icons/gmail.svg" alt="ico" class="icon-media mr-2">
+      <img src="images/icons/search.svg" alt="ico" class="icon-media mr-2">
+    </div>
+  </div>
+  <hr>
+
+  <div class="footer-typo ml-3 d-flex align-items-center" id="footer-editions">
+    <span>Editions:</span>
+    <a href="#" class="py-0 px-2">U.S. Edition</a>
+    <a href="#" class="py-0 px-2">日本</a>
+    <a href="#" class="py-0 px-2">Pakistan</a>
+    <a href="#" class="py-0 px-2">Polska</a>
+    <a href="#" class="py-0 px-2">România</a>
+  </div>
+
+  <div class="footer-typo ml-3" id="footer-links">
+    <a href="#" class="pr-1 ml-0">About Us</a>
+    <a href="#" class="pr-1 ml-1">Corrections</a>
+    <a href="#" class="pr-1 ml-1">Contact Us</a>
+    <a href="#" class="pr-1 ml-1">Editorial Guidelines</a>
+    <a href="#" class="pr-1 ml-1">Advertise</a>
+    <a href="#" class="pr-1 ml-1">Copyright</a>
+    <a href="#" class="pr-1 ml-1">Terms & Conditions</a>
+    <a href="#" class="pr-1 ml-1">Privacy Policy</a>
+    <a href="#" class="pr-1 ml-1">Cookie Policy</a>
+    <a href="#" class="pr-1 ml-1">Terms of Sale</a>
+    <a href="#" class="pr-1 ml-1">Archive</a>
+    <a href="#" class="pr-1 ml-1">Announcements</a>
+    <a href="#" class="pr-1 ml-1">Consent preferences</a>
+  </div>
+</footer>
 
 </body>
 </html>

@@ -1,3 +1,315 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 .bg-red {
-  background-color: #F72210 !important;
+  background-color: #f72210 !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.clear-left {
+  clear: left;
+}
+
+main {
+  max-width: 1280px;
+}
+
+/* --- TYPOGRAPHY --- */
+h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333;
+}
+
+h3 a {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+h4 a {
+  font-size: 17px;
+  font-weight: 700;
+  color: #333;
+}
+
+h5 a {
+  font-weight: 100;
+  font-size: 18px;
+  color: #444;
+}
+
+h3 a:hover {
+  color: #333;
+  text-decoration-color: #f72210;
+}
+
+h4 a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+#magazine-odd a {
+  font-weight: 700;
+  color: #111;
+  background: #f4f5f6;
+}
+
+#footer-editions a {
+  color: #999;
+}
+
+#nav-links a {
+  font-size: 1rem;
+  font-weight: 700;
+  color: black;
+  border-right: solid 1px lightgray;
+}
+
+#footer-links a {
+  color: #999;
+}
+
+#opinion h4 a {
+  color: #333;
+  font-size: 1rem;
+  line-height: 0.5rem;
+}
+
+#more-stories h3 a {
+  font-size: 1rem;
+}
+
+#culture-travel h5 a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#the-debate p a {
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+}
+
+#magazine span + a {
+  font-weight: 600;
+  color: #f72210;
+}
+
+#editor-pick img + a {
+  color: #f72210;
+  font-weight: 600;
+  background: #eaebee;
+  position: relative;
+  top: -26px;
+}
+
+#nav-links a:last-child {
+  border-right: none;
+}
+
+#nav-links a:hover {
+  color: #f72210;
+  text-decoration: none;
+}
+
+#opinion h4 a:hover {
+  color: #f72210;
+}
+
+p {
+  font-size: 15px;
+  color: #333;
+}
+
+nav p {
+  color: #fff;
+}
+
+#culture-travel p {
+  color: #999;
+}
+
+/* --- NAVBAR --- */
+#icon-menu {
+  width: 20px;
+}
+
+#nav-logo-mob {
+  width: 130px;
+}
+
+#icon-cloud {
+  width: 30px;
+}
+
+#icon-search {
+  width: 20px;
+}
+
+#icon-logo-nav {
+  width: 400px;
+}
+
+.btn-white {
+  font-weight: 700;
+  background: #fff;
+  color: #f72210;
+}
+
+.white-link {
+  color: #fff;
+  font-weight: 700;
+}
+
+#btn-sub:hover {
+  color: #f72210;
+}
+
+/* --- SIGN UP --- */
+#newsletter {
+  max-width: 300px;
+  max-height: 170px;
+  border: solid 1px #e5e5e5;
+  background: #f4f5f6;
+}
+
+#btn-signup-1 {
+  color: #fff;
+  font-weight: 700;
+  background: #666;
+}
+
+#btn-signup-1:hover {
+  text-decoration: none;
+  background-color: #999;
+}
+
+#btn-signup-2 {
+  color: #666;
+  line-height: 4;
+}
+
+#btn-signup-2:hover {
+  text-decoration: none;
+}
+
+/* --- MISCELLANEOUS --- */
+.img-65 {
+  width: 65px;
+}
+
+#deb-author1 {
+  border-top: solid 4px #f72210;
+}
+
+#deb-author2 {
+  border-top: solid 4px #1c87fb;
+}
+
+/* --- MAGAZINE --- */
+#magazine span {
+  color: #fff;
+  background: #f72210;
+}
+
+#magazine img {
+  width: 100%;
+}
+
+/* --- EDITOR --- */
+#editor-pick img {
+  width: 100%;
+}
+
+/* --- SLIDES --- */
+#slides-show img {
+  width: 100%;
+}
+
+/* --- US --- */
+.title-red {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #f72210;
+}
+
+/* --- SUBSCRIBE --- */
+#magazines {
+  min-height: 300px;
+  background: #f4f5f6;
+}
+
+#news-move {
+  position: absolute;
+  left: 200px;
+  width: 160px;
+}
+
+.newsleter-bg {
+  max-width: 180px;
+  min-height: 300px;
+  background-image: url("images/subscribe/starting5-homepage.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+#newsletter-bottom {
+  border: solid 1px #e5e5e5;
+}
+
+#offset {
+  position: relative;
+  top: 15px;
+  left: -90px;
+}
+
+.btn-f {
+  font-weight: 700;
+  color: #fff;
+  background: #f72210;
+}
+
+#ml-n1 {
+  position: relative;
+  left: -100px;
+}
+
+/* --- FOOTER --- */
+#logo-footer {
+  width: 300px;
+}
+
+.icon-media {
+  width: 20px;
+}
+
+@media (max-width: 411px) {
+  #ml-n1 {
+    position: relative;
+    left: 0;
+    top: 20px;
+  }
+
+  #offset {
+    position: absolute;
+    top: 75px;
+    left: 185px;
+  }
+}
+
+@media (max-width: 768px) {
+  #magazines {
+    display: initial;
+  }
 }
